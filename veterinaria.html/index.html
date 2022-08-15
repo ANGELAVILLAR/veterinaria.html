@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>MyFirstWebPageVet</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="generalContainer">
+        <div class="row" id="title">
+            <div class="col-7">
+                <header id="header_text">
+                    <h2>MY PET CLINIC</h2>
+                    <h1>Mis Mascotas</h1>
+                </header>
+            </div>
+            <div class="col-5">
+                <img src="img/logoVeterinary.jpg" alt="logoVet" id="headerImg">
+            </div>
+            <div class="col-12" id="menuBar">
+                <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+                    <a class="navbar-brand" href="#petClinicNav">My Pet Clinic</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Guardería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Promociones</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="row" id="section">
+                <div class="row col-7" id="contenido">
+
+                    <section>
+                        <article>
+                            <h4>Cuidado y educación para su perro</h4>
+                            <div style="float: left">
+                                <img src="img/puppy_and_flower.jpg" class="jpg" alt="dogAndFlower" id="imgFoto">
+                            </div>
+                            <p>
+                                Tener una mascota implica una gran responsabidad. Las mascotas en general requieren
+                                cuidados constantes para suplir sus necesidades, es un ser que siente y crea conexión
+                                con las personas, por eso es necesario cuidarla y protegerla. Además, tener en cuenta
+                                que la alimentación es primordial, esta debe ser balanceada, pensando siempre en evitar
+                                obesidad, debe contar con espacios sanos y limpios y por su puesto estar muy pendientes
+                                de atender sus necesidades fisiológicas. Adicionalmente, el baño y el ase de dientes y
+                                orejas de manera constante permite un buen estado de salud.
+                            </p>
+                        </article>
+                    </section>
+                    <hr class="new5">
+
+                    <section>
+                        <article>
+                            <h4>Salir de viaje con tu mascota</h4>
+                            <p><img src="img/travelPet.jpg" alt="carDog" id="imgFoto">
+                                !Olvídate de detar a tu mascota en casa!
+                                Puedes traer contigo a ese personaje especial en tu familia. Consigue un medio de
+                                transporte agradable y seguro para tu mascota.
+                                Exiten guacales de diferentes tamaños, éstos cuentan consuficiente ventilación.
+                                Asegurate de comprar uno a la medida que le permita acomodarse de diferentes formas.
+                                Esto evitará malestares o mareos
+                            </p>
+                        </article>
+                    </section>
+                </div>
+                <div class="row col-5" id="formulario">
+                    <form id="form" method="post" action="pagina-detino.php">
+                        
+                        <div class="row" id="formTitulo">
+                            <h1>Solicitar cita médica</h1><br>
+                        </div>
+                    
+                        <label>Mascota</label>
+                        <input type="text" id="name" name="nombre" required="" placeholder="Nombre" />
+
+                        <label for="numtarjeta">Edad</label>
+                        <input id="numtarjeta" name="numerTarjeta" type="number" placeholder="en meses" requiered>
+
+                        <label>Raza</label>
+                        <input type="text" id="name" name="nombre" requiered="" placeholder="Nombre" />
+
+                        <label>Fecha</label>
+                        <input type="date" name="fecha" id="fecha" required="" placeholder="Fecha" />
+
+                        <label for="numerTarjeta">Hora</label>
+                        <input type="time" name="hora" min="29:00" max="21:00" step="3600" />
+
+                        <label>Amo</label>
+                        <input type="text" id="name" name="nombre" required="" placeholder="Nombre" />
+
+                        <button type="submit" name="enviar" id="boton">VALIDAR CITA</button>
+                    </form>
+                </div>
+                <div class="row">
+                    <footer id="pieDePagina">
+                        <p>Contáctenos</p>
+                        <p>Línea Gratuita 018000-00001</p>
+                        <p>Correo: <a href="mailto:hege@example.com">preguntas@caninosyfelinos.com</a></p>
+                    </footer>
+                </div>
+            </div>
+            <script>
+                (function() {
+                    var registro = function() {
+                        alert('Registro Exitoso');
+                    }
+
+                    var boton = document.getElementById('boton');
+                    boton.addEventListener("click", registro)
+                }())
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
