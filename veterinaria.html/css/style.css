@@ -78,6 +78,7 @@ hr.new5{
 	background: rgb(73, 110, 109);
 	padding: 10px;
 	margin-left: 1.7em;
+	box-sizing: border-box;
 }
 
 #formTitulo{
@@ -91,10 +92,11 @@ hr.new5{
 
 #formulario h1{
 	font-family: 'kanit', Arial, Helvetica, sans-serif;
-	font-size: 20px;
+	font-size: 30px;
 	font-weight: bold;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	color: aliceblue;
+
 }
 
 #formulario label{
@@ -103,6 +105,8 @@ hr.new5{
 	text-align: right;
 	width: 80px;
 	float: left;
+	box-sizing: border-box;
+	margin-bottom: 20px;
 }
 
 #formulario input{
@@ -112,20 +116,24 @@ hr.new5{
 	border: solid 1px #708090;
 	width: 200px;
 	margin: 2px 0 20px 10px;
+	box-sizing: border-box;
 }
 
 #formulario button{
-	clear: both;
-	margin: 0 auto;
-
-	display: flex;
-	height: 31px;
-	background: #a5a2a2;
+	background: #31384a;
+	border: none;
+	padding: 15px 32px;
+	display: inline-block;
 	text-align: center;
-	line-height: 31px;
 	color: rgb(20, 20, 20);
-	font-size: 11px;
+	font-size: 16px;
 	font-weight: bold;
+	box-sizing: border-box;
+}
+
+#formulario button:hover{
+	cursor: pointer;
+	background-color: rgb(12, 49, 49);
 }
 
 #pieDePagina{
@@ -138,4 +146,28 @@ hr.new5{
 #pieDePagina p{
 	color: aliceblue;
 	text-align: center;
+}
+
+
+@media screen and  (max-width: 480px){
+
+	#generalContainer{
+		width: 100%;
+	}
+	
+	#section{
+		width: 100%;
+	}
+
+	#formulario{
+		width: 100%;
+	}
+
+	input{
+		width: 100%;
+	}
+
+	#formulario input{
+		width: 100%;
+	}
 }
